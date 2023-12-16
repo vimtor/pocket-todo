@@ -1,0 +1,7 @@
+{
+  "extends": "@pocket-apps/tsconfig",
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
+  "include": ["src"]
+}

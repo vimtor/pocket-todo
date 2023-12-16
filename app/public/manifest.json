@@ -1,0 +1,22 @@
+{
+  "name": "Pocket Todo",
+  "short_name": "Pocket Todo",
+  "description": "Small to-do app that actually makes you productive",
+  "author": "Pocket Apps",
+  "start_url": "/login",
+  "icons": [
+    {
+      "src": "assets/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#59CDFF",
+  "background_color": "#59CDFF",
+  "display": "standalone"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "todo-api",
+  "version": "0.4.4",
+  "private": true,
+  "repository": "https://github.com/pocket-apps/todo-api.git",
+  "license": "UNLICENSE",
+  "scripts": {
+    "build": "cd functions && yarn build",
+    "deploy": "firebase deploy",
+    "format": "cd functions && yarn format",
+    "format:fix": "cd functions && yarn format:fix",
+    "lint": "cd functions && yarn lint",
+    "lint:fix": "cd functions && yarn lint:fix",
+    "setup": "cd functions && yarn install"
+  }
+}

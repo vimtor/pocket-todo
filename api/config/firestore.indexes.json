@@ -1,0 +1,20 @@
+{
+  "indexes": [],
+  "fieldOverrides": [
+    {
+      "collectionGroup": "tasks",
+      "fieldPath": "title",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "tasks",
+      "fieldPath": "description",
+      "indexes": []
+    },
+    {
+      "collectionGroup": "users",
+      "fieldPath": "settings",
+      "indexes": []
+    }
+  ]
+}

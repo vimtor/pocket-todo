@@ -1,0 +1,33 @@
+name: Publish
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    name: Publish to Firebase
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Setup Firebase
+        uses: pocket-apps/action-setup-firebase@v2
+        with:
+          firebase-token: ${{ secrets.FIREBASE_TOKEN }}
+      - name: Install Dependencies
+        run: yarn setup
+      - name: Run Linters
+        run: yarn lint
+      - name: Build Packages
+        run: yarn build
+      - name: Deploy Functions & Rules
+        run: yarn deploy
+      - name: Update Versions
+        uses: pocket-apps/action-update-version@v1
+        with:
+          files: "package.json, functions/package.json"
+          repo-token: ${{ secrets.GITHUB_TOKEN }}

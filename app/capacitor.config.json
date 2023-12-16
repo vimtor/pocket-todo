@@ -1,0 +1,13 @@
+{
+  "appId": "com.pocket.todo",
+  "appName": "Pocket Todo",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": "build",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2000
+    }
+  },
+  "cordova": {}
+}

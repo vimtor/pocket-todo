@@ -1,0 +1,16 @@
+{
+  "extends": "@pocket-apps/tsconfig",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "noEmit": false,
+    "target": "es2017",
+    "outDir": "lib",
+    "baseUrl": "src",
+    "paths": {
+      "helpers": ["./helpers"],
+      "typings": ["./typings"]
+    }
+  },
+  "compileOnSave": true,
+  "include": ["src"]
+}

@@ -1,0 +1,21 @@
+name: CI
+on: push
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install Dependencies
+        run: yarn install
+      - name: Run Linters
+        run: yarn lint
+      - name: Run Format
+        run: yarn format
+      - name: Build Package
+        run: yarn build
